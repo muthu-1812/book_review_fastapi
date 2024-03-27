@@ -1,2 +1,3 @@
 Sending email to user@example.com the following message: Hi user1 thanks for reviewing the book Lord of the Rings
 Sending email to user@example.com the following message: Hi user1 thanks for reviewing the book Lord of the Rings
+Sending email to user@example.com the following message: Hi string thanks for reviewing the book Lord of the Rings

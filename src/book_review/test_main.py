@@ -7,7 +7,7 @@ client = TestClient(app)
 def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == "Hello World"
+    assert response.json() == "Book Review System"
 
 
 def test_add_book_invalid_year():
@@ -58,7 +58,8 @@ def test_add_valid_review():
     review = {
         "ratings": 5,
         "review": "stringstri",
-        "review_author": "string"
+        "review_author": "string",
+        "reviewer_email": "user@example.com"
     }
     response = client.post("books/1/reviews", json=review)
 

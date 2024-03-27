@@ -1,12 +1,8 @@
-from typing import Annotated
 
-from fastapi import Depends, FastAPI, HTTPException, Query, BackgroundTasks
-from sqlalchemy.exc import IntegrityError
-from sqlalchemy.orm import Session
-from starlette import status
+from fastapi import FastAPI
 
-from src.book_review import crud, models, schemas
-from src.book_review.database import SessionLocal, engine
+from src.book_review import models
+from src.book_review.database import engine
 from src.book_review.routers import book
 
 models.Base.metadata.create_all(bind=engine)
