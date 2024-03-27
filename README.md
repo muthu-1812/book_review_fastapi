@@ -10,7 +10,7 @@ RESTful API using FastAPI for a hypothetical book review system.
 #### This route is reponsible for creating a book, viewing a list of books(you can filter by author or publication year) it also has nested endpoints for creating reviews for each book and viewing them as well.
 
 
-# how to run locally
+# How to run locally
 First clone this repo by using following command
 ````
 
