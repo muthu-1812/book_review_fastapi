@@ -1,7 +1,7 @@
 # book_review_fastapi
 RESTful API using FastAPI for a hypothetical book review system.
 
-# Backend clone  of social media app by using FastAPI
+# Book Review System using FastAPI
 
 #### This API  has 1 route
 
