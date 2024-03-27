@@ -17,11 +17,11 @@ def get_books(db: Session, author_name: str | None, publication_year: int | None
     query = db.query(models.Book)
 
     if author_name:
-        query = query.filter(models.Book.author == author_name)
+        query = query.filter(models.Book.author.ilike(f"%{author_name}%"))
 
     # Ideally I should provide year range
     elif publication_year:
-        query = query.filter(models.Book.author == author_name)
+        query = query.filter(models.Book.publication_year == publication_year)
 
     return query.offset(skip).limit(limit).all()
 
